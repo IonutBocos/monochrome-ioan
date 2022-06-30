@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './../components/Header';
 
 export default function Home() {
   return (
@@ -7,11 +8,7 @@ export default function Home() {
         <title>Monochrome</title>
       </Head>
 
-      <header className="header">
-        Hello
-        <img src="/images/banner.png" alt=""></img>
-        <i className="fa-brands fa-youtube"></i>
-      </header>
+      <Header></Header>
 
       <main className="content"></main>
 

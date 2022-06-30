@@ -12,8 +12,9 @@
 @import './variables';
 
 @import './shered/index';
+@import 'reset';
 
 body {
-  font-size: 22px;
-  font-family: 'Playfair Display', 'Regular Roman';
+  font-size: 16px;
+  font-family: 'Playfair Display', 'Roboto';
 }

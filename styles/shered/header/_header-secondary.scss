@@ -1,0 +1,37 @@
+.header-secondary {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding-top: 24px;
+
+    .header-controls ul {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      font-size: 21px;
+    }
+  }
+
+  @include media-breakpoint-up('lg') {
+    height: 500px;
+    background: $black-primary url(/images/banner.png) center/cover no-repeat;
+    width: 100%;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      font-size: 19px;
+      text-transform: uppercase;
+      padding-top: 24px;
+
+      .header-connect ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        color: $white-primary;
+      }
+    }
+  }
+}
