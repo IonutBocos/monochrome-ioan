@@ -38,4 +38,16 @@
       }
     }
   }
+
+  &-nav {
+    ul {
+      color: $white-primary;
+      height: 52px;
+      font-size: 19px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+    }
+  }
 }

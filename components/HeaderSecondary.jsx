@@ -60,7 +60,20 @@ export default function HeaderSecondary() {
           </ul>
         </div>
 
-        <div className="header-controls">
+        <div className="header-controls d-none d-lg-flex">
+          <form className="header-secondary-search">
+            <input
+              type="search"
+              name="Search"
+              id="Search"
+              placeholder="Search"
+            />
+
+            <label for="Search">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </label>
+          </form>
+
           <ul>
             <li>
               <a href="https://x.ro" title="My Account">

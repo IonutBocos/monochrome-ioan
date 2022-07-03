@@ -6,11 +6,41 @@
     text-transform: uppercase;
     padding-top: 24px;
 
-    .header-controls ul {
-      display: flex;
-      flex-direction: row;
-      gap: 24px;
-      font-size: 21px;
+    .header-controls {
+      gap: 35px;
+
+      .header-secondary-search {
+        width: 270px;
+        height: 41px;
+        border: 1px solid $gray-secondary;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        input {
+          background: none;
+          border: none;
+          padding-left: 25px;
+          height: 41px;
+          width: 270px;
+        }
+
+        label i {
+          left: 5px;
+          bottom: 10px;
+          position: absolute;
+          color: $black-primary;
+          opacity: 1;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        font-size: 21px;
+      }
     }
   }
 

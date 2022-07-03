@@ -12,14 +12,42 @@ export default function HeaderPrimary() {
           </ul>
         </div>
 
-        <div className="header-search">
+        <form className="header-search">
           <input type="search" name="Search" id="Search" placeholder="search" />
 
           <label for="Search">
             <i className="fa-solid fa-magnifying-glass"></i>
           </label>
-        </div>
+        </form>
       </div>
+
+      <section className="header-primary-nav container d-none d-lg-block">
+        <ul>
+          <li>
+            <a href="https://x.ro">New Arrivals</a>
+          </li>
+
+          <li>
+            <a href="https://x.ro">Brands</a>
+          </li>
+
+          <li>
+            <a href="https://x.ro">Men s</a>
+          </li>
+
+          <li>
+            <a href="https://x.ro">Women s</a>
+          </li>
+
+          <li>
+            <a href="https://x.ro">Accesories</a>
+          </li>
+
+          <li>
+            <a href="https://x.ro">Lookbook</a>
+          </li>
+        </ul>
+      </section>
     </section>
   );
 }
