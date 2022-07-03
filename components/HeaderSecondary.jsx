@@ -69,7 +69,7 @@ export default function HeaderSecondary() {
               placeholder="Search"
             />
 
-            <label for="Search">
+            <label For="Search">
               <i className="fa-solid fa-magnifying-glass"></i>
             </label>
           </form>

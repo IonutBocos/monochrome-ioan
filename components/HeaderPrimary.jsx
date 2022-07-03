@@ -15,7 +15,7 @@ export default function HeaderPrimary() {
         <form className="header-search">
           <input type="search" name="Search" id="Search" placeholder="search" />
 
-          <label for="Search">
+          <label For="Search">
             <i className="fa-solid fa-magnifying-glass"></i>
           </label>
         </form>
