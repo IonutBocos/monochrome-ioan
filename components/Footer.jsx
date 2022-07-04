@@ -1,13 +1,17 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-inner ">
-        <section className="footer-connect container">
-          <form className="connect-us">
+      <div className="footer-inner container">
+        <section className="footer-connect">
+          <form className="footer-newsletter">
             <h1>Let s connect</h1>
 
-            <label For="subscribe">
+            <label For="subscribe" className="d-none">
               Be the first to receive exclusives offers
+            </label>
+
+            <label For=" subscribe" className="d-none d-lg-block ">
+              sing up for our newssleter
             </label>
 
             <input
@@ -59,79 +63,77 @@ export default function Footer() {
             </div>
           </section>
         </section>
+
+        <section className="footer-nav">
+          {/* <!-- ul intors in flex --> */}
+          <h1>How can wee help?</h1>
+          <div className="footer-nav-contact">
+            <ul>
+              <li>
+                <a href="https://x.ro">about us</a>
+              </li>
+
+              <li>
+                <a href="https://x.ro">careers</a>
+              </li>
+
+              <li>
+                <a href="https://x.ro">affiliates</a>
+              </li>
+
+              <li>
+                <a href="https://x.ro">advertising</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="https://x.ro">style and fit</a>
+              </li>
+
+              <li>
+                <a href="https://x.ro">faqs</a>
+              </li>
+
+              <li>
+                <a href="https://x.ro">delivery</a>
+              </li>
+
+              <li>
+                <a href="https://x.ro">returns</a>
+              </li>
+            </ul>
+
+            <ul className="d-none d-lg-block">
+              <li>call us</li>
+
+              <li>
+                <a href="tel:+44 (0)10 2345 6789">+44 (0)10 2345 6789</a>
+              </li>
+
+              <li>
+                <a href="mailto:">email customer care</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="terms d-block d-lg-none">
+            <ul>
+              <li>
+                <a href="https://x.ro" title="terms">
+                  terms and conditions
+                </a>
+              </li>
+
+              <li>
+                <a href="https://x.ro" title="privacy">
+                  privacy and cookies
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-
-      <section className="footer-nav">
-        {/* <!-- ul intors in flex --> */}
-        <h1>How can wee help?</h1>
-        <div className="footer-nav-contact">
-          <ul>
-            <li>
-              <a href="https://x.ro">about us</a>
-            </li>
-
-            <li>
-              <a href="https://x.ro">careers</a>
-            </li>
-
-            <li>
-              <a href="https://x.ro">affiliates</a>
-            </li>
-
-            <li>
-              <a href="https://x.ro">advertising</a>
-            </li>
-          </ul>
-
-          <ul>
-            <li>
-              <a href="https://x.ro">style and fit</a>
-            </li>
-
-            <li>
-              <a href="https://x.ro">faqs</a>
-            </li>
-
-            <li>
-              <a href="https://x.ro">delivery</a>
-            </li>
-
-            <li>
-              <a href="https://x.ro">returns</a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="terms d-block d-lg-none">
-          <ul>
-            <li>
-              <a href="https://x.ro" title="terms">
-                terms and conditions
-              </a>
-            </li>
-
-            <li>
-              <a href="https://x.ro" title="privacy">
-                privacy and cookies
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="footer-contact d-none d-lg-block">
-        <ul>
-          <li>call us</li>
-
-          <li>
-            <a href="tel:+44 (0)10 2345 6789">+44 (0)10 2345 6789</a>
-          </li>
-
-          <li>
-            <a href="mailto:">email customer care</a>
-          </li>
-        </ul>
-      </section>
     </footer>
   );
 }
