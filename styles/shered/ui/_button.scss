@@ -1,0 +1,26 @@
+.button-main {
+  width: 83px;
+  height: 32px;
+  font-size: 12px;
+  border: 1px solid $black-primary;
+  background-color: $white-primary;
+  transition: color 0.2s linear, background-color 0.2s linear;
+
+  &:hover {
+    color: $white-primary;
+    background-color: $gray-secondary;
+  }
+
+  &-secondary {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 13px;
+    padding: 4px 20px;
+    text-align: center;
+
+    &:hover {
+      color: $white-primary;
+      background-color: $gray-secondary;
+    }
+  }
+}

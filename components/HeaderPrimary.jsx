@@ -21,6 +21,12 @@ export default function HeaderPrimary() {
         </form>
       </div>
 
+      <section className="banner-main d-block d-lg-none">
+        <a href="https://x.ro" title="new in">
+          <button className="button-main-secondary">new in</button>
+        </a>
+      </section>
+
       <section className="header-primary-nav container d-none d-lg-block">
         <ul>
           <li>

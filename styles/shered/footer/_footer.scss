@@ -6,6 +6,10 @@
       padding-top: 25px;
       padding-bottom: 25px;
 
+      @include media-breakpoint-up('lg') {
+        padding: 0;
+      }
+
       .footer-newsletter {
         display: flex;
         flex-direction: column;
@@ -54,6 +58,9 @@
         }
 
         @include media-breakpoint-up('lg') {
+          align-items: flex-start;
+          margin-bottom: 38px;
+
           h1 {
             display: none;
           }
@@ -65,11 +72,17 @@
           input {
             width: 261px;
             height: 34px;
+            margin-bottom: 12px;
           }
 
           button {
             width: 75px;
             height: 25px;
+            margin-bottom: 0;
+          }
+
+          .privacy-required {
+            display: none;
           }
         }
       }
@@ -85,6 +98,14 @@
         .footer-media ul {
           display: flex;
           gap: 20px;
+        }
+
+        @include media-breakpoint-up('lg') {
+          align-items: flex-start;
+
+          h1 {
+            display: none;
+          }
         }
       }
     }
@@ -121,20 +142,40 @@
         font-size: 14px;
         text-decoration: underline;
       }
+
+      @include media-breakpoint-up('lg') {
+        display: flex;
+        background-color: $gray-primary;
+        justify-content: space-between;
+
+        h1 {
+          display: none;
+        }
+
+        .footer-nav-contact {
+          display: flex;
+          flex-direction: row-reverse;
+          color: $black-primary;
+          gap: 166px;
+          letter-spacing: 0.33px;
+          line-height: 37px;
+          font-size: 22px;
+
+          > :nth-child(1) {
+            width: auto;
+            border-right: none;
+          }
+        }
+      }
     }
 
+    // footer-inner
     @include media-breakpoint-up('lg') {
-      justify-content: space-between;
       display: flex;
       flex-direction: row-reverse;
-
-      .footer-nav-contact {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-        gap: 166px;
-      }
+      justify-content: space-between;
+      align-items: center;
+      height: 249px;
     }
   }
 }

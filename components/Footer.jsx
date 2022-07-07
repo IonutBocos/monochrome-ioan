@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer mt-27px">
       <div className="footer-inner container">
         <section className="footer-connect">
           <form className="footer-newsletter">
