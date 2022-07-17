@@ -9,6 +9,11 @@
     display: block;
     margin-bottom: 10px;
     margin-bottom: 26px;
+    transition: 0.2s linear ease-in;
+
+    &:hover {
+      transform: scale(1.02);
+    }
 
     img {
       width: 100%;
@@ -30,7 +35,7 @@
     }
 
     p {
-      font-weight: 300;
+      font: normal normal 300 22px/43px Roboto;
       font-size: 16px;
       letter-spacing: 0.33px;
       opacity: 1;
@@ -69,7 +74,6 @@
       }
 
       p {
-        font-weight: 300;
         font-size: 22px;
         letter-spacing: 0.33px;
         text-align: justify;

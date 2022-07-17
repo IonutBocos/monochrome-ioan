@@ -22,7 +22,7 @@ export default function Footer() {
               required
             />
 
-            <button type="submit" name="subscribe" id="search">
+            <button type="submit" name="subscribe" id="submit">
               Submit
             </button>
 

@@ -14,7 +14,7 @@ export default function CatalogPreviews() {
 
         {/* bootstrap */}
         <div className="product-tiles row">
-          <div className="col-6 col-lg-3">
+          <div className="col-6 col-lg-3 ">
             <ProductTile></ProductTile>
           </div>
 
@@ -82,6 +82,10 @@ export default function CatalogPreviews() {
             <ProductTileWomen></ProductTileWomen>
           </div>
         </div>
+
+        <footer className="catalog-footer d-none d-lg-flex">
+          <button className="button-main">view all</button>
+        </footer>
       </section>
 
       <section className="catalog-preview container flex-layout">
@@ -106,6 +110,10 @@ export default function CatalogPreviews() {
             <ProductTileWomen></ProductTileWomen>
           </div>
         </div>
+
+        <footer className="catalog-footer">
+          <button className="button-main">view all</button>
+        </footer>
       </section>
     </>
   );

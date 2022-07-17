@@ -20,7 +20,9 @@ export default function ProductTileWomen() {
       </header>
 
       <div className="product-tile-title">
-        <h1>Monochrome</h1>
+        <h1>
+          <a href="https://x.ro">Monochrome</a>
+        </h1>
       </div>
 
       <div className="product-tile-pricing">

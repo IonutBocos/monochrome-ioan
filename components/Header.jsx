@@ -3,7 +3,7 @@ import HeaderSecondary from './HeaderSecondary';
 
 export default function Header() {
   return (
-    <header className="header mt-lg-3">
+    <header className="header">
       <HeaderSecondary></HeaderSecondary>
 
       <HeaderPrimary></HeaderPrimary>

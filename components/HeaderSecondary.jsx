@@ -60,8 +60,8 @@ export default function HeaderSecondary() {
           </ul>
         </div>
 
-        <div className="header-controls d-none d-lg-flex">
-          <form className="header-secondary-search">
+        <div className="header-controls d-lg-flex">
+          <form className="header-secondary-search d-none d-lg-block">
             <input
               type="search"
               name="Search"
